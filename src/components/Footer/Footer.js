@@ -23,7 +23,7 @@ const Footer = () => {
          <p className="titulo-footer">Contacto</p>
          <ul className="list-unstyled">
            <li className="li-footer"><i className="fa-brands fa-whatsapp"> </i> +569 96854511</li>
-           <li className="li-footer" ><i className="fa-regular fa-paper-plane"></i>  contacto@wegeek.cl</li>
+           <li className="li-footer" ><i className="fa-regular fa-paper-plane"></i>  contacto@geekpower.com</li>
           
           
          </ul>
