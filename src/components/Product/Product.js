@@ -27,9 +27,38 @@ const Product = () => {
       quantity: 1,
     };
     try {
-      const respuesta = await axios.post(`${baseURL}/carrito/addItem`, datos, axiosConfig);
-      
+      const respuesta = await axios.post(
+        `${baseURL}/carrito/addItem`,
+        datos,
+        axiosConfig
+      );
+
       navigate("/cart");
+    } catch (error) {
+      return false;
+    }
+  };
+
+  const actualizarProducto = async () => {
+    navigate(`/actualizarproduct/${id}`);
+  };
+
+  const eliminarProducto = async () => {
+    const axiosConfig = {
+      headers: {
+        authorization: "Bearer " + localStorage.getItem("token"),
+      },
+      withCredentials: true,
+    };
+
+    try {
+      const respuesta = await axios.delete(
+        `${baseURL}/product/delete/${id}`,
+        axiosConfig
+      );
+      if (respuesta) {
+        navigate("/catalogo");
+      }
     } catch (error) {
       return false;
     }
@@ -70,6 +99,22 @@ const Product = () => {
                 onClick={productoAlCarrito}
               >
                 Agregar al Carrito
+              </Button>
+              <Button
+                className="boton-update"
+                type="submit"
+                size="sm"
+                onClick={actualizarProducto}
+              >
+                Actualizar Producto
+              </Button>
+              <Button
+                className="boton-eliminar"
+                type="submit"
+                size="sm"
+                onClick={eliminarProducto}
+              >
+                Eliminar producto
               </Button>
             </Col>
           </Col>

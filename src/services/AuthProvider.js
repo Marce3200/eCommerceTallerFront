@@ -30,7 +30,8 @@ const AuthProvider = ({ children }) => {//uso contexto
             `${baseURL}/user/logged-user`,
           axiosConfig
         );
-     
+     console.log("hola1")
+     console.log(res)
         setUser(res.data.u);
         setAuth(true)
       } catch(error) {

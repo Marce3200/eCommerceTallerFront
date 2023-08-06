@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
 import "../Profile/profile.css";
@@ -10,8 +8,10 @@ import { useAuth } from "../../services/AuthProvider";
 
 const Profile = () => {
   const { user } = useAuth();
- 
-  return (
+ console.log(user)
+  return user && (
+    //pongo user para que antes de cargar el componente se cargue user
+
     <Container>
         <center>
       <Row className="w-50">

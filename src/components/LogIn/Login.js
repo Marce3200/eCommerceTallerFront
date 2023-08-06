@@ -27,8 +27,10 @@ const Login = () => {
     const p = password.current.value;
     
     const loginConExito = await signIn(u, p);
+    console.log(loginConExito)
     if (loginConExito){
       setUser(loginConExito)
+      
       setAuth(true)
       navigate("/perfil")
     }else {setAlertaLogIn(true)

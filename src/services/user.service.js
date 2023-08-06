@@ -16,7 +16,7 @@ const signIn_API = async (username, password) => {
 };
 
 const saveToken = async (token) => {
-  console.log("toeknlogin "+ token )
+  // console.log("tokenlogin "+ token )
   localStorage.setItem("token", token);
   console.log(await readToken());
 };
@@ -30,7 +30,8 @@ const signIn = async (username, password) => {
 
   if (result) {
     saveToken(result.data.token);
-   
+   console.log(result)
+   console.log(result.data.user)
     return result.data.user;
   }
   return false;

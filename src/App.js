@@ -12,6 +12,7 @@ import Catalogo from './components/Catalogo/Catalogo';
 import Profile from './components/Profile/Profile';
 import AddProduct from './components/AddProduct/AddProduct';
 import CerrarSesion from './components/Logout';
+import UpdateProduct from './components/UpdateProduct/updateProduct';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path='/*' element={<Error />} />
       <Route path='/perfil' element={<Profile />} />
       <Route path='/addproduct' element={<AddProduct />} />
+      <Route path='/actualizarproduct/:id' element={<UpdateProduct />} />
       <Route path='/errorlogin' element={<Error />} />
       <Route path='/logout' element={<CerrarSesion />} />
       </Route>
