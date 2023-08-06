@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../NavBar/navbar.css";
-import minilogo from "../img/minilogo.png";
+import logo3 from "../img/logo3.png";
 import "../NavBar/navbar.css";
 import { useAuth } from "../../services/AuthProvider";
 import { logout } from "../../services/user.service";
@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
-      <Navbar.Brand href="/"><img className="mini-logo" src={minilogo} alt= "minilogo"/></Navbar.Brand>
+      <Navbar.Brand href="/"><img className="mini-logo" src={logo3} alt= "minilogo"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">

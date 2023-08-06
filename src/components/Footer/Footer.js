@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import minilogo from "../img/minilogo.png";
+import logo3 from "../img/logo3.png";
 import "../Footer/footer.css";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
@@ -16,7 +16,7 @@ const Footer = () => {
      <center>
       <Row>
        <Col sm={12} md={4} lg={4} className="mt-3 mb-3">
-         <img className="logo-footer" src={minilogo} alt="logo" />
+         <img className="logo-footer" src={logo3} alt="logo" />
        </Col>
       
        <Col sm={12} md={4} lg={4} className="mt-2 mb-1">
@@ -60,7 +60,7 @@ const Footer = () => {
         <hr className="hr" />
         <Row>
           <p className="texto-derechos col-sm">
-            &copy;2023 MarceDev & Antoniaarga | Todos los derechos reservados
+            &copy;2023 MarcelaQuezada & GasparMolina | Todos los derechos reservados
           </p>
         </Row>
       

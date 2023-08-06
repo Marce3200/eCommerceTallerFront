@@ -1,4 +1,7 @@
 
+.banner{
+  max-height: 30% !important;
+}
 
 .text-banner{
 color: white;

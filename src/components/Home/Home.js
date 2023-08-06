@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/esm/Button";
-import logo from "../img/logo.png";
+import logov2 from "../img/logov2.png";
 
 
 const Home = () => {
@@ -12,8 +12,8 @@ const Home = () => {
     <Container fluid className="p-0">
       <Row className="logosection">
         <center>
-          <Col>
-            <img className="logo" src={logo} />
+          <Col className="logo-nuevo">
+            <img className="logo" src={logov2} alt="" />
             <div>
               <p className="bajada-header">
                 Arma tu Set Up, con los mejores accesorios tecnológicos y el

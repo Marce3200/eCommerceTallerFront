@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import "../Catalogo/catalogo.css";
-import banner from "../img/Banner.jpg";
+import banner from "../img/banner4.jpeg";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -36,7 +36,7 @@ const Catalogo = () => {
     <Container fluid>
       <center>
         <Row>
-          <img src={banner} alt = ""/>
+          <img className="banner" src={banner} alt = ""/>
           <p className="titulo-seccion pt-5">Productos más vendidos</p>
         </Row>
 

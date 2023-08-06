@@ -1,5 +1,5 @@
 .logosection {
-    background: url(../img/background.jpeg) no-repeat center fixed;
+    background: url(../img/background.jpg) no-repeat center fixed;
     height: 90vh;
     background-size: cover;
     object-position: 15% 100%;;
@@ -16,12 +16,15 @@
     margin-top: 20px;
     
   }
- 
+  .logo-nuevo{
+    margin-top: 40px !important;
+  }
 
   .logo {
-    max-width: 40%;
+    max-width: 60% !important;
     min-width: 40%;
     margin-bottom: 40px;
+   
   }
   
   
